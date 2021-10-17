@@ -11,7 +11,11 @@
     <color name="peonies">#BE91D9</color>
     <color name="lilac">#CCADF0</color>
     <color name="lavender">#A791D9</color>
-    <color name="cream">#FFFBF7</color>
+    <color name="cream">#F6F5F2</color>
     <color name="color_worst_tip">#DC1E0B</color>
     <color name="color_best_tip">#35BA01</color>
+
+    <color name="sea_blue">#427B9E</color>
+    <color name="marble">#88ADB3</color>
+    <color name="marble2">#84A8AD</color>
 </resources>

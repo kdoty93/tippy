@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.widget.Button
 import android.widget.EditText
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import kotlin.math.roundToInt
 
 private const val TAG = "MainActivity"
 private const val INITIAL_TIP_PERCENT = 15
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvTipAmount: TextView
     private lateinit var tvTotalAmount: TextView
     private lateinit var tvTipDescription: TextView
+    private lateinit var btRound: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +33,13 @@ class MainActivity : AppCompatActivity() {
         tvTipAmount = findViewById(R.id.tvTipAmount)
         tvTotalAmount = findViewById(R.id.tvTotalAmount)
         tvTipDescription = findViewById(R.id.tvTipDescription)
+        btRound = findViewById(R.id.btRound)
 
         seekBarTip.progress = INITIAL_TIP_PERCENT
         tvTipPercentLabel.text = "$INITIAL_TIP_PERCENT%"
         updateTipDescription(INITIAL_TIP_PERCENT)
         seekBarTip.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                // $variable_name does string interpelation in kotlin
                 Log.i(TAG, "onProgressChanged $progress")
                 tvTipPercentLabel.text = "$progress%"
                 computeTipAndTotal()
@@ -59,6 +62,16 @@ class MainActivity : AppCompatActivity() {
                 computeTipAndTotal()
             }
         })
+
+        // rounds the tip and total when button is pressed
+        btRound.setOnClickListener {
+            val roundedBase = etBaseAmount.text.toString().toDouble().roundToInt()
+            val roundedTip = tvTipAmount.text.toString().toDouble().roundToInt()
+            val total = roundedBase + roundedTip
+
+            tvTipAmount.text = "$roundedTip.00"
+            tvTotalAmount.text = "$total.00"
+        }
     }
 
     private fun updateTipDescription(tipPercent: Int) {
