@@ -24,6 +24,8 @@ The following **extensions** are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+<iframe src="https://giphy.com/embed/4zsPRkOIHMXoIWTOJV" width="262" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/4zsPRkOIHMXoIWTOJV">via GIPHY</a></p>
+
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
