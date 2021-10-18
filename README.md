@@ -23,6 +23,7 @@ The following **extensions** are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
+https://giphy.com/embed/4zsPRkOIHMXoIWTOJV
 
 <img src='https://giphy.com/embed/4zsPRkOIHMXoIWTOJV' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
