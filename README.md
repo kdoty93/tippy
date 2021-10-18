@@ -23,9 +23,8 @@ The following **extensions** are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-https://giphy.com/embed/4zsPRkOIHMXoIWTOJV
 
-<img src='https://giphy.com/embed/4zsPRkOIHMXoIWTOJV' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/hvpB6f9' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
